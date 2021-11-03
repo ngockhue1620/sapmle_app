@@ -1,0 +1,13 @@
+en:
+  hello: "Hello world"
+  welcome: "Welcome to the Sample App"
+  description: "This is the home page for the Ruby on Rails Tutorial sample application"
+  sign_up: "Sign up now"
+  home: "Home"
+  help: "Help"
+  contact: "Contact"
+  login: "Login"
+  sample_app: "Sample App"
+  ruby_app: "Ruby on Rails Tutorial Sample App"
+  user: "User page"
+  user_description: "Hello, This is user page"
