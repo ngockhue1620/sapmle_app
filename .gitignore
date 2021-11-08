@@ -13,6 +13,7 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*
+/test/*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
@@ -38,3 +39,4 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+.idea
