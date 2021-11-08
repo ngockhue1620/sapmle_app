@@ -1,0 +1,11 @@
+vn:
+  hello: "xin chao"
+  welcome: "Xin Chào bạn đến với Sample App"
+  description: "Trang web này là khóa học ruby"
+  sign_up: "Đăng ký ngay"
+  home: "Trang chủ"
+  help: "Giúp đỡ"
+  contact: "Liên Kết"
+  login: "Đăng nhập"
+  sample_app: "Sample App"
+  ruby_app: "Ruby on Rails Tutorial Sample App"
