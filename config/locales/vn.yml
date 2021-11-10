@@ -11,3 +11,12 @@ vn:
   ruby_app: "Ruby on Rails Tutorial Sample App"
   user: "Trang Người dùng"
   user_description: "Xin chào đây là trang người dùng"
+  id: "Id"
+  name: "Tên"
+  mail: "E-Mail"
+  created: "Ngày Tạo"
+  updated: "Ngày Sửa"
+  error: "Lỗi"
+  not_found: "Người dùng không tồn tại"
+  formats:
+    short: "arrrround %H'ish"
