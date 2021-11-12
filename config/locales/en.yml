@@ -18,3 +18,10 @@ en:
   updated: "Update At"
   error: "error"
   not_found: "user not found"
+  new_user: "New user"
+  formats:
+    short: "arrrround %H'ish"
+  profile: "Profile"
+  settings: "Setting"
+  logout: "LogOut"
+  in_valid_mail: "Invalid email/password combination"

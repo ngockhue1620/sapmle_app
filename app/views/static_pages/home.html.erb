@@ -1,13 +1,15 @@
 <% provide :title, t("home") %>
 <div class="center jumbotron">
   <% flash.each do |message_type, message| %>
-    <div class="alert alert-<%= message_type %>"><%= message %></div>
-  <% end %>
-  <h1>
-    <%= t "welcome" %>
-  </h1>
-  <h2>
-    <%= t "description" %>
-  </h2>
-  <%= link_to t("sign_up") , "#" , class: "btn btn-lg btn-primary" %>
+    <div class="alert alert-<%= message_type %>">
+      <%= message %>
+    </div>
+    <% end %>
+      <h1>
+        <%= t "welcome" %>
+      </h1>
+      <h2>
+        <%= t "description" %>
+      </h2>
+      <%= link_to t("sign_up") , "#" , class: "btn btn-lg btn-primary" %>
 </div>
