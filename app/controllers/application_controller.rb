@@ -1,5 +1,7 @@
 class ApplicationController < ActionController::Base
   around_action :switch_locale
+  protect_from_forgery with: :exception
+  include SessionsHelper
 
   private
 
@@ -7,4 +9,5 @@ class ApplicationController < ActionController::Base
     locale = params[:locale] || I18n.default_locale
     I18n.with_locale(locale, &action)
   end
+  
 end

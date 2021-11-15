@@ -1,4 +1,4 @@
-<header class="navbar navbar-fixed-top navbarinverse">
+<header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
     <%= link_to t("sample_app") , "#" , id: "logo" %>
       <nav>
@@ -12,9 +12,29 @@
           <li>
             <%= link_to t("contact") , contact_path %>
           </li>
-          <li>
-            <%= link_to t("login") , "" %>
-          </li>
+          <% if logged_in? %>
+            <li>
+              <%= link_to t("user") , '#' %>
+            </li>
+            <li class="dropdown">
+
+            <li>
+              <%= link_to t("profile") , current_user %>
+            </li>
+            <li>
+              <%= link_to t("settings") , '#' %>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <%= link_to t("logout") , logout_path, method: :delete %>
+            </li>
+
+            </li>
+            <% else %>
+              <li>
+                <%= link_to t("login") , login_path %>
+              </li>
+              <% end %>
         </ul>
       </nav>
   </div>

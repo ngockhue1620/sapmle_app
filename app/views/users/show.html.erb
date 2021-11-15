@@ -1,24 +1,45 @@
-<% provide :title, t ("user")  %>
 <% flash.each do |message_type, message| %>
-  <div class="alert alert-<%= message_type %>"><%= message %></div>
+  <div class="alert alert-<%= message_type %>">
+    <%= message %>
+  </div>
 <% end %>
-<% unless flash.present?  %>
+<% unless flash.present? %>
 <div class="row">
   <table>
     <thead>
-    <th><%= t "id" %></th>
-    <th><%= t "name" %></th>
-    <th><%= t "mail" %></th>
-    <th><%= t "created" %></th>
-    <th><%= t "updated" %></th>
+      <th>
+        <%= t "id" %>
+      </th>
+      <th>
+        <%= t "name" %>
+      </th>
+      <th>
+        <%= t "mail" %>
+      </th>
+      <th>
+        <%= t "created" %>
+      </th>
+      <th>
+        <%= t "updated" %>
+      </th>
     </thead>
     <tbody>
       <tr>
-        <td><%= @user.id %></td>
-        <td><%= @user.name %></td>
-        <td><%= @user.email %></td>
-        <td><%= l @user.created_at, :format => :short %></td>
-        <td><%= l @user.updated_at, :format => :short %></td>
+        <td>
+          <%= @user.id %>
+        </td>
+        <td>
+          <%= @user.name %>
+        </td>
+        <td>
+          <%= @user.email %>
+        </td>
+        <td>
+          <%= l @user.created_at, :format=> :short %>
+        </td>
+        <td>
+          <%= l @user.updated_at, :format=> :short %>
+        </td>
       </tr>
     </tbody>
   </table>

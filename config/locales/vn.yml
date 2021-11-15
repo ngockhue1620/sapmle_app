@@ -18,5 +18,10 @@ vn:
   updated: "Ngày Sửa"
   error: "Lỗi"
   not_found: "Người dùng không tồn tại"
+  new_user: "New user"
   formats:
     short: "arrrround %H'ish"
+  profile: "Trang cá nhân"
+  settings: "Cài đặt"
+  logout: "Đăng xuất"
+  in_valid_mail: "Email hoặc mật khẩu không hợp lệ"
